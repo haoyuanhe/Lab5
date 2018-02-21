@@ -10,9 +10,31 @@
 public class Bank {
 
     public String bankName;
-
+    public String BankAccount;
+    public static int totalAccounts;
     public Bank() {
         bankName = "Illini Bank";
+    }
+    public String getBankName() {
+        return bankName;
+    }
+
+    public void setBankName(String bankName) {
+        this.bankName = bankName;
+    }
+    public String getBankAccount() {
+        return BankAccount;
+    }
+    public void setBankAccount( String newbankaccount) {
+        BankAccount = newbankaccount;
+        totalAccounts+= 1;
+    }
+    public static int getTotalAccounts() {
+        return totalAccounts;
+    }
+
+    public static void setTotalAccounts(int totalAccounts) {
+        Bank.totalAccounts = totalAccounts;
     }
 
     /**
@@ -29,6 +51,12 @@ public class Bank {
         /*
          * Implement this function
          */
+
+        if () {
+            return true;
+        }else{
+            return false;
+        }
     }
 
     /**
